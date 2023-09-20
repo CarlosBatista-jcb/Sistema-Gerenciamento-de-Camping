@@ -1,0 +1,516 @@
+/* Reset de estilos para garantir uma base consistente */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,90&display=swap');
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*********************** HEADER *****************/
+
+header.stick{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .logo{
+    color: #0c0c0c;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.stick .logo{
+    color: #111;
+}
+
+header .logo:hover{
+    color: #00BFFF;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #080808;
+    text-decoration: none;
+}
+
+header.stick ul li a{
+    color: #111;
+}
+
+header ul li a:hover{
+    color: #00BFFF;
+}
+
+.footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Estilos para botões */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slide-bottom 2s ease-in-out infinite alternate 0.5s both;
+    position: relative;
+    background: #1E90FF;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Outros estilos específicos */
+/* Adicione estilos específicos conforme necessário */
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #333;
+}
+
+/* Estilo para os botões de "Entrar" e "Sair" na barra de navegação */
+.navbar .login-button {
+    margin-right: 10px;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #000;
+}
+
+/* Estilo para o texto do menu */
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+    color: #fff;
+}
+
+.menu{
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu.active{
+    left: 0;
+}
+
+/* Estilo para formulários */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('../includes/webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../includes/webfonts/fa-solid-900.woff') format('woff');
+}
+
+/* Defina um tamanho personalizado para as imagens da galeria */
+/*.gallery-image {
+    width: 350px;
+    height: auto;
+} */
+
+.redes-sociais.heading{
+    padding: 40px 20px;
+    background: #B0C4DE;
+    color: black;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transform: 0.5s;
+    border-radius: 15px;
+}
+
+.redes-sociais ul{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.redes-sociais ul li{
+    position: relative;
+    list-style: none;
+    box-sizing: inherit;
+}
+
+.redes-sociais ul li a{
+    position: relative;
+    display: block;
+    margin: 0 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.redes-sociais ul li a:hover{
+    color: #00BFFF;
+    top:-2px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+section{
+    padding: 100px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(../image/banner\ th-\ certo1.jpg);
+    background-color: black;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #f9f9fa;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #1907bb;
+    font-weight: 500;
+}
+
+.textBx .btn:hover{
+    background: #0c0f92;
+}
+
+/* Animação */
+#log{
+    font-family: 'Courier New', Courier;
+    color: #02010f;
+}
+
+#log:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.contentBx .btn:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    background: #00BFFF;
+    color: black;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx{
+    padding-right: 30px;
+}
+
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.w50 .img-th{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/********************* TECNOLOGIAS *****************/
+.tecnologias{
+    background: #f7f5fa;
+}
+
+.heading.white{
+    color: #002244;
+}
+
+.tecnologias .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.tecnologias .content .tecnologiasBx{
+    padding: 40px 20px;
+    background: #ffff;
+    color: black;
+    max-width: 20%;
+    margin: 20px;
+    text-align: center;
+    transform: 0.5s;
+    border-radius: 15px;
+    box-shadow: 0 3px 3px 0 rgba(145, 145, 145, 0.1), 0 6px 6px 0 rgba(163, 162, 162, 0.19);
+}
+
+.tecnologias .content .tecnologiasBx:hover{
+    background: #fff;
+    top:-2px;
+    box-shadow: 0 4px 4px #00BFFF;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+}
+
+.tecnologias .content .tecnologiasBx i{
+    max-width: 80px;
+    margin-bottom: 12px;
+}
+
+.tecnologias .content .tecnologiasBx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contato{
+    background: #f7f5fa;
+}
+
+/** A partir daqui começa */
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#back-to-top:hover {
+    color: #fff;
+    background-color: #00BFFF;
+}
+
+/* Responsividade */
+
+@media (max-width: 2560px) {
+    .overlay .sci li a{
+        padding: 190%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .overlay .sci li a{
+        padding: 15%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .overlay .sci li a{
+        font-size: 20px;
+        margin-left: -50%;
+    }
+    #em-breve{
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 991px) {
+    header,
+    header.stick {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(../image/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        background: url(../image/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.stick .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 320px) {
+    header,
+    header.stick {
+        padding: -5px 60px;
+    }
+    a.logo {
+        font-size: 1.3em;
+        margin-left: -10px;
+    }
+    div.toggle {
+        margin-right: 90px;
+    }
+    .toggle.active {
+        margin-right: 90px;
+    }
+    .toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    ul.menu.active {
+        width: 73%;
+    }
+
+    .img.img.img-th.animate {
+        width: 270px;
+        margin-right: -40px;
+    }
+
+    .projetosBx:hover .overlay {
+        padding: 60px 105px;
+    }
+
+    .overlay .sci li a {
+        margin-left: -60%;
+    }
+
+    .redes-sociais ul li a {
+        margin-left: 8px;
+    }
+}
